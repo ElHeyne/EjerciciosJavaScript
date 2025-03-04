@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: beige;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #0e1114;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.exercise-section{
+    background-color: #1e2227;
+    h1{
+        color: #fdee78;
+    }
+}
+
+.title-section{
+    background-color: #2c2f33;
+
+    h1{
+        color: #f7df1e;
+        font-weight: bolder;
+    }
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
