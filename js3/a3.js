@@ -1,12 +1,14 @@
-var contenido = document.getElementById("contenido")
-var texto = document.createElement("p")
+var contenido = document.getElementById("contenido");
+var texto = document.createElement("p");
 
-function validar_numeros() {
-    let num1 = document.getElementById("number_1").value
-    let num2 = document.getElementById("number_2").value
-    let num3 = document.getElementById("number_3").value
+var numero = prompt("Escribe un numero: ");
+var numero_sumado = 0;
 
-    numMax = Math.max(num1, num2, num3);
-    texto.innerText = "El numero mas grande es: " + numMax;
-    contenido.append(texto);
+if (!isNaN(numero)) {
+    for (i in numero.split("")) {
+        numero_sumado += parseInt(numero[i])
+    }
+    texto.innerHTML = "Numero Original: " + numero + "<br>Numero Sumado: " + numero_sumado;
 }
+
+contenido.append(texto);

@@ -1,8 +1,30 @@
 var contenido = document.getElementById("contenido");
 var texto = document.createElement("p");
 
-var cadena = prompt("Escribe Una Frase");
+var numero = prompt("Escribe un numero: ");
+var numero_array = [];
 
-texto.innerHTML="Minusculas - " + cadena.toLowerCase() + "<br>" + "Mayusculas - " + cadena.toUpperCase();
+if (!isNaN(numero)) {
+    texto.innerHTML += "Original: " + numero + "<br>";
 
-contenido.appendChild(texto);
+
+    for (i in numero.split("")) {
+        numero_array.push(parseInt(numero[i]))
+    }
+
+    texto.innerHTML += "Inverso: ";
+    for (var i = 1; i <= numero_array.length; i++){
+        console.log(i)
+        texto.innerHTML += numero_array[(numero_array.length)-(i)];
+    }
+    texto.innerHTML += "<br>"
+
+    texto.innerHTML += "Ordenado:"
+    numero_array.join()
+    numero_array.sort()
+    for (i in numero_array){
+        texto.innerHTML += numero_array[i];
+    }
+}
+
+contenido.append(texto);
