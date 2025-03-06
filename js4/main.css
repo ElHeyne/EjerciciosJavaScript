@@ -108,6 +108,10 @@ form * {
     margin-bottom: 10px;
 }
 
+form fieldset {
+    border: none;
+}
+
 form input {
     border: none;
     border-radius: 5px;

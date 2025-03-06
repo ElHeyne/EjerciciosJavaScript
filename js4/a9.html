@@ -18,13 +18,20 @@
         <h2>Lista de Coches</h2>
 
         <form href="#" id="car_form">
-            <input id="car_company" type="text" placeholder="Marca">
-            <input id="car_model" type="text" placeholder="Modelo">
+            <fieldset>
+                <input id="car_company" type="text" placeholder="Marca">
+                <input id="car_model" type="text" placeholder="Modelo">
+                <input id="car_price" type="number" placeholder="Precio">
+            </fieldset>
+            
+            <fieldset>
+                <input type="button" class="btn" id="submit_btn" onclick="add_car()" value="Enviar"></button>
+            </fieldset>
         </form>
     </section>
 
     <section class="exercise-section" id="contenido">
-        <table>
+        <table id="car_table">
             <thead>
                 <th>Marca</th>
                 <th>Modelo</th>
@@ -34,13 +41,6 @@
             </thead>
         
             <tbody>
-                <tr>
-                    <td>Ford</td>
-                    <td>Taurus</td>
-                    <td>32000</td>
-                    <td></td>
-                    <td></td>
-                </tr>
             </tbody>
         </table>
     </section>
