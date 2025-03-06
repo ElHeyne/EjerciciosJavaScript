@@ -112,7 +112,8 @@ form fieldset {
     border: none;
 }
 
-form input {
+form input,
+form select{
     border: none;
     border-radius: 5px;
     background-color: #17191b;
