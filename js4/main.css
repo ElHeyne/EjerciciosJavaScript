@@ -31,6 +31,21 @@ button:hover {
     background-color: #17191b;
 }
 
+.btn-li {
+    margin: 0 20px 0 20px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: #363b41;
+    color: #fdee78;
+
+    transition: all 0.3s;
+}
+
+.btn-del {
+    color: #ff0000;
+}
+
 .exercise-section{
     background-color: #1e2227;
     h1{
@@ -111,4 +126,8 @@ form .btn {
 
 form .btn:hover {
     background-color: #0c0d0e;
+}
+
+li {
+    margin: 10px 0 0 0;
 }

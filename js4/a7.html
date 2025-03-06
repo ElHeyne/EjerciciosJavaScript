@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A7</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <script src="a7.js" defer></script>
+
+    <style>
+        .dot {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            display: inline-block;
+        }
+
+        #dot1 {
+            background-color: rgb(228, 66, 66);
+        }
+
+        #dot2 {
+            background-color: rgb(152, 228, 66);
+        }
+
+        #dot3 {
+            background-color: rgb(66, 163, 228);
+        }
+
+        #dot4 {
+            background-color: rgb(228, 66, 206);
+        }
+
+    </style>
+</head>
+<body id="body">
+    <section class="title-section">
+        <h1>A6</h1>
+    </section>
+
+    <section class="exercise-section" id="contenido">
+        <h2>Bolas Coloridas</h2>
+        
+        <span onmouseover="change_background('dot1')" onmouseout="end_change_background()" class="dot" id="dot1"></span>
+        <span onmouseover="change_background('dot2')" onmouseout="end_change_background()" class="dot" id="dot2"></span>
+        <span onmouseover="change_background('dot3')" onmouseout="end_change_background()" class="dot" id="dot3"></span>
+        <span onmouseover="change_background('dot4')" onmouseout="end_change_background()" class="dot" id="dot4"></span>
+        
+    </section>
+
+    <section class="control-section self-bottom">
+        <a href="a6.html">
+           <button>< A6</button>
+        </a>
+
+        <a href="a8.html">
+            <button>A8 ></button>
+         </a>
+    </section>
+</body>
+</html>
